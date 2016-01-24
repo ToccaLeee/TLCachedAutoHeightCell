@@ -1,0 +1,25 @@
+{
+  "name": "TLCachedAutoHeightCell",
+  "version": "0.1.0",
+  "summary": "A short description of TLCachedAutoHeightCell.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/TLCachedAutoHeightCell",
+  "license": "MIT",
+  "authors": {
+    "ToccaLee": "xiaoliu.li@ele.me"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/TLCachedAutoHeightCell.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "TLCachedAutoHeightCell": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

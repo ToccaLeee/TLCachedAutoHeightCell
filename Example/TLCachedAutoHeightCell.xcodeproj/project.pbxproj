@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F0D90CAAD27BFEDC6076D09 /* Pods_TLCachedAutoHeightCell_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9650C37455E3D8D6640175 /* Pods_TLCachedAutoHeightCell_Example.framework */; };
+		4D69D6AB85058319DCECA7AB /* Pods_TLCachedAutoHeightCell_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEA1D7F431FEF01848D6D1F /* Pods_TLCachedAutoHeightCell_Tests.framework */; };
+		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
+		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
+		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		6003F59E195388D20070C39A /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* TLAppDelegate.m */; };
+		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
+		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
+		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		ECDFC7331C549E2D001E04DB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECDFC7321C549E2D001E04DB /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		ECF202001C5493D400CEC5AD /* ContentGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF201F01C5493D400CEC5AD /* ContentGenerator.m */; settings = {ASSET_TAGS = (); }; };
+		ECF202011C5493D400CEC5AD /* TLContentCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF201F31C5493D400CEC5AD /* TLContentCacheViewController.m */; settings = {ASSET_TAGS = (); }; };
+		ECF202021C5493D400CEC5AD /* TLMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF201F51C5493D400CEC5AD /* TLMenuViewController.m */; settings = {ASSET_TAGS = (); }; };
+		ECF202031C5493D400CEC5AD /* TLNoneCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF201F71C5493D400CEC5AD /* TLNoneCacheViewController.m */; settings = {ASSET_TAGS = (); }; };
+		ECF202041C5493D400CEC5AD /* TLPositionCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF201F91C5493D400CEC5AD /* TLPositionCacheViewController.m */; settings = {ASSET_TAGS = (); }; };
+		ECF202071C5493D400CEC5AD /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF201FF1C5493D400CEC5AD /* TestTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		ECF202091C54944800CEC5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF202081C54944800CEC5AD /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		ECF202261C54962200CEC5AD /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF202251C54962200CEC5AD /* Model.m */; settings = {ASSET_TAGS = (); }; };
+		ECF202271C54973600CEC5AD /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF201FE1C5493D400CEC5AD /* TestTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6003F589195388D20070C39A;
+			remoteInfo = TLCachedAutoHeightCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C75366AAE7693BF894B2684 /* Pods-TLCachedAutoHeightCell_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLCachedAutoHeightCell_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLCachedAutoHeightCell_Tests/Pods-TLCachedAutoHeightCell_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2F0D09C3CDFF56D59C6640E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		32FF4EE36C8A9B9F518B524C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		33D898ECA38D39E6CA74DFAD /* Pods-TLCachedAutoHeightCell_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLCachedAutoHeightCell_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLCachedAutoHeightCell_Tests/Pods-TLCachedAutoHeightCell_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		561304980E5683DDA057872F /* Pods-TLCachedAutoHeightCell_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLCachedAutoHeightCell_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TLCachedAutoHeightCell_Example/Pods-TLCachedAutoHeightCell_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* TLCachedAutoHeightCell_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLCachedAutoHeightCell_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6003F595195388D20070C39A /* TLCachedAutoHeightCell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TLCachedAutoHeightCell-Info.plist"; sourceTree = "<group>"; };
+		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6003F59B195388D20070C39A /* TLCachedAutoHeightCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TLCachedAutoHeightCell-Prefix.pch"; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
+		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6003F5AE195388D20070C39A /* TLCachedAutoHeightCell_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TLCachedAutoHeightCell_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		7A9650C37455E3D8D6640175 /* Pods_TLCachedAutoHeightCell_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLCachedAutoHeightCell_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9ADA83885045FEA07D2BBF3 /* TLCachedAutoHeightCell.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TLCachedAutoHeightCell.podspec; path = ../TLCachedAutoHeightCell.podspec; sourceTree = "<group>"; };
+		DDA480361CB4C4E54A34725A /* Pods-TLCachedAutoHeightCell_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TLCachedAutoHeightCell_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TLCachedAutoHeightCell_Example/Pods-TLCachedAutoHeightCell_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ECDFC7321C549E2D001E04DB /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		ECF201EF1C5493D400CEC5AD /* ContentGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentGenerator.h; sourceTree = "<group>"; };
+		ECF201F01C5493D400CEC5AD /* ContentGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentGenerator.m; sourceTree = "<group>"; };
+		ECF201F21C5493D400CEC5AD /* TLContentCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLContentCacheViewController.h; sourceTree = "<group>"; };
+		ECF201F31C5493D400CEC5AD /* TLContentCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLContentCacheViewController.m; sourceTree = "<group>"; };
+		ECF201F41C5493D400CEC5AD /* TLMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLMenuViewController.h; sourceTree = "<group>"; };
+		ECF201F51C5493D400CEC5AD /* TLMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLMenuViewController.m; sourceTree = "<group>"; };
+		ECF201F61C5493D400CEC5AD /* TLNoneCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNoneCacheViewController.h; sourceTree = "<group>"; };
+		ECF201F71C5493D400CEC5AD /* TLNoneCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNoneCacheViewController.m; sourceTree = "<group>"; };
+		ECF201F81C5493D400CEC5AD /* TLPositionCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPositionCacheViewController.h; sourceTree = "<group>"; };
+		ECF201F91C5493D400CEC5AD /* TLPositionCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPositionCacheViewController.m; sourceTree = "<group>"; };
+		ECF201FD1C5493D400CEC5AD /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
+		ECF201FE1C5493D400CEC5AD /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
+		ECF201FF1C5493D400CEC5AD /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		ECF202081C54944800CEC5AD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		ECF202241C54962200CEC5AD /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		ECF202251C54962200CEC5AD /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		FCEA1D7F431FEF01848D6D1F /* Pods_TLCachedAutoHeightCell_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TLCachedAutoHeightCell_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6003F587195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
+				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				3F0D90CAAD27BFEDC6076D09 /* Pods_TLCachedAutoHeightCell_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
+				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				4D69D6AB85058319DCECA7AB /* Pods_TLCachedAutoHeightCell_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F13CE1D57A1289A214CF558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA480361CB4C4E54A34725A /* Pods-TLCachedAutoHeightCell_Example.debug.xcconfig */,
+				561304980E5683DDA057872F /* Pods-TLCachedAutoHeightCell_Example.release.xcconfig */,
+				33D898ECA38D39E6CA74DFAD /* Pods-TLCachedAutoHeightCell_Tests.debug.xcconfig */,
+				0C75366AAE7693BF894B2684 /* Pods-TLCachedAutoHeightCell_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6003F581195388D10070C39A = {
+			isa = PBXGroup;
+			children = (
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				6003F593195388D20070C39A /* Example for TLCachedAutoHeightCell */,
+				6003F5B5195388D20070C39A /* Tests */,
+				6003F58C195388D20070C39A /* Frameworks */,
+				6003F58B195388D20070C39A /* Products */,
+				0F13CE1D57A1289A214CF558 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6003F58B195388D20070C39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58A195388D20070C39A /* TLCachedAutoHeightCell_Example.app */,
+				6003F5AE195388D20070C39A /* TLCachedAutoHeightCell_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6003F58C195388D20070C39A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6003F58D195388D20070C39A /* Foundation.framework */,
+				6003F58F195388D20070C39A /* CoreGraphics.framework */,
+				6003F591195388D20070C39A /* UIKit.framework */,
+				6003F5AF195388D20070C39A /* XCTest.framework */,
+				7A9650C37455E3D8D6640175 /* Pods_TLCachedAutoHeightCell_Example.framework */,
+				FCEA1D7F431FEF01848D6D1F /* Pods_TLCachedAutoHeightCell_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6003F593195388D20070C39A /* Example for TLCachedAutoHeightCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECF201EE1C5493D400CEC5AD /* Data */,
+				ECF201F11C5493D400CEC5AD /* VC */,
+				ECF201FC1C5493D400CEC5AD /* View */,
+				6003F59C195388D20070C39A /* TLAppDelegate.h */,
+				6003F59D195388D20070C39A /* TLAppDelegate.m */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				ECDFC7321C549E2D001E04DB /* LaunchScreen.xib */,
+				ECF202081C54944800CEC5AD /* Main.storyboard */,
+				6003F594195388D20070C39A /* Supporting Files */,
+			);
+			name = "Example for TLCachedAutoHeightCell";
+			path = TLCachedAutoHeightCell;
+			sourceTree = "<group>";
+		};
+		6003F594195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F595195388D20070C39A /* TLCachedAutoHeightCell-Info.plist */,
+				6003F596195388D20070C39A /* InfoPlist.strings */,
+				6003F599195388D20070C39A /* main.m */,
+				6003F59B195388D20070C39A /* TLCachedAutoHeightCell-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6003F5B5195388D20070C39A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				B9ADA83885045FEA07D2BBF3 /* TLCachedAutoHeightCell.podspec */,
+				32FF4EE36C8A9B9F518B524C /* README.md */,
+				2F0D09C3CDFF56D59C6640E8 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		ECF201EE1C5493D400CEC5AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ECF201EF1C5493D400CEC5AD /* ContentGenerator.h */,
+				ECF201F01C5493D400CEC5AD /* ContentGenerator.m */,
+				ECF202241C54962200CEC5AD /* Model.h */,
+				ECF202251C54962200CEC5AD /* Model.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		ECF201F11C5493D400CEC5AD /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				ECF201F21C5493D400CEC5AD /* TLContentCacheViewController.h */,
+				ECF201F31C5493D400CEC5AD /* TLContentCacheViewController.m */,
+				ECF201F41C5493D400CEC5AD /* TLMenuViewController.h */,
+				ECF201F51C5493D400CEC5AD /* TLMenuViewController.m */,
+				ECF201F61C5493D400CEC5AD /* TLNoneCacheViewController.h */,
+				ECF201F71C5493D400CEC5AD /* TLNoneCacheViewController.m */,
+				ECF201F81C5493D400CEC5AD /* TLPositionCacheViewController.h */,
+				ECF201F91C5493D400CEC5AD /* TLPositionCacheViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		ECF201FC1C5493D400CEC5AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECF201FD1C5493D400CEC5AD /* TestTableViewCell.h */,
+				ECF201FE1C5493D400CEC5AD /* TestTableViewCell.m */,
+				ECF201FF1C5493D400CEC5AD /* TestTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6003F589195388D20070C39A /* TLCachedAutoHeightCell_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "TLCachedAutoHeightCell_Example" */;
+			buildPhases = (
+				A1455DCBAE44E0E05B1E49AC /* Check Pods Manifest.lock */,
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				C946FB752B333726AA581BD6 /* Embed Pods Frameworks */,
+				1D07ACA51E375A7D909F8EFA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLCachedAutoHeightCell_Example;
+			productName = TLCachedAutoHeightCell;
+			productReference = 6003F58A195388D20070C39A /* TLCachedAutoHeightCell_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6003F5AD195388D20070C39A /* TLCachedAutoHeightCell_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "TLCachedAutoHeightCell_Tests" */;
+			buildPhases = (
+				36954618A18AB670DEF3BA5A /* Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+				3DABE76DC9E6DB39808A698E /* Embed Pods Frameworks */,
+				2185699C166A340D04C1D665 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6003F5B4195388D20070C39A /* PBXTargetDependency */,
+			);
+			name = TLCachedAutoHeightCell_Tests;
+			productName = TLCachedAutoHeightCellTests;
+			productReference = 6003F5AE195388D20070C39A /* TLCachedAutoHeightCell_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6003F582195388D10070C39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TL;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ToccaLee;
+				TargetAttributes = {
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+				};
+			};
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "TLCachedAutoHeightCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6003F589195388D20070C39A /* TLCachedAutoHeightCell_Example */,
+				6003F5AD195388D20070C39A /* TLCachedAutoHeightCell_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6003F588195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECDFC7331C549E2D001E04DB /* LaunchScreen.xib in Resources */,
+				ECF202071C5493D400CEC5AD /* TestTableViewCell.xib in Resources */,
+				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				ECF202091C54944800CEC5AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AC195388D20070C39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D07ACA51E375A7D909F8EFA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TLCachedAutoHeightCell_Example/Pods-TLCachedAutoHeightCell_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2185699C166A340D04C1D665 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TLCachedAutoHeightCell_Tests/Pods-TLCachedAutoHeightCell_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36954618A18AB670DEF3BA5A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3DABE76DC9E6DB39808A698E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TLCachedAutoHeightCell_Tests/Pods-TLCachedAutoHeightCell_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1455DCBAE44E0E05B1E49AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C946FB752B333726AA581BD6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TLCachedAutoHeightCell_Example/Pods-TLCachedAutoHeightCell_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6003F586195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF202271C54973600CEC5AD /* TestTableViewCell.m in Sources */,
+				6003F59E195388D20070C39A /* TLAppDelegate.m in Sources */,
+				ECF202041C5493D400CEC5AD /* TLPositionCacheViewController.m in Sources */,
+				ECF202001C5493D400CEC5AD /* ContentGenerator.m in Sources */,
+				ECF202261C54962200CEC5AD /* Model.m in Sources */,
+				6003F59A195388D20070C39A /* main.m in Sources */,
+				ECF202031C5493D400CEC5AD /* TLNoneCacheViewController.m in Sources */,
+				ECF202011C5493D400CEC5AD /* TLContentCacheViewController.m in Sources */,
+				ECF202021C5493D400CEC5AD /* TLMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6003F5AA195388D20070C39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6003F589195388D20070C39A /* TLCachedAutoHeightCell_Example */;
+			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6003F596195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F597195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6003F5BD195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6003F5BE195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6003F5C0195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA480361CB4C4E54A34725A /* Pods-TLCachedAutoHeightCell_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLCachedAutoHeightCell/TLCachedAutoHeightCell-Prefix.pch";
+				INFOPLIST_FILE = "TLCachedAutoHeightCell/TLCachedAutoHeightCell-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6003F5C1195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 561304980E5683DDA057872F /* Pods-TLCachedAutoHeightCell_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TLCachedAutoHeightCell/TLCachedAutoHeightCell-Prefix.pch";
+				INFOPLIST_FILE = "TLCachedAutoHeightCell/TLCachedAutoHeightCell-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6003F5C3195388D20070C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D898ECA38D39E6CA74DFAD /* Pods-TLCachedAutoHeightCell_Tests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLCachedAutoHeightCell_Example.app/TLCachedAutoHeightCell_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6003F5C4195388D20070C39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C75366AAE7693BF894B2684 /* Pods-TLCachedAutoHeightCell_Tests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TLCachedAutoHeightCell_Example.app/TLCachedAutoHeightCell_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "TLCachedAutoHeightCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "TLCachedAutoHeightCell_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C0195388D20070C39A /* Debug */,
+				6003F5C1195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "TLCachedAutoHeightCell_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6003F582195388D10070C39A /* Project object */;
+}

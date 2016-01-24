@@ -1,0 +1,6 @@
+framework module TLCachedAutoHeightCell {
+  umbrella header "TLCachedAutoHeightCell-umbrella.h"
+
+  export *
+  module * { export * }
+}

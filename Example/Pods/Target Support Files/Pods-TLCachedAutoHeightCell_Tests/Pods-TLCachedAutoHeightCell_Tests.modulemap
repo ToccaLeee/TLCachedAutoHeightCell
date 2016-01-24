@@ -1,0 +1,6 @@
+framework module Pods_TLCachedAutoHeightCell_Tests {
+  umbrella header "Pods-TLCachedAutoHeightCell_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
