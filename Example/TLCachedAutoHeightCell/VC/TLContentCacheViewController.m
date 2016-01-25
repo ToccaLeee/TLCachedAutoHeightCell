@@ -6,7 +6,7 @@
 //
 
 #import "TLContentCacheViewController.h"
-#import "UITableView+CachedAutoHeight.h"
+#import "TLCachedAutoHeightCell.h"
 #import "TestTableViewCell.h"
 #import "ContentGenerator.h"
 
