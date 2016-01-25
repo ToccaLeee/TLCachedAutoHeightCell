@@ -9,6 +9,11 @@
 
 @interface UITableView (TLCellHeightPrecache)
 
+/**
+ *  @brief Start precache cell height if needed
+ *
+ */
+
 - (void)TL_precacheIfNeeded;
 
 @end

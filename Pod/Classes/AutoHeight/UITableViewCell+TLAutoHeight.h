@@ -9,7 +9,12 @@
 
 @interface UITableViewCell (TLAutoHeight)
 
+// Whether the cell is fixed height. if YES, the cell height is only calculated once
+
 @property (nonatomic, assign) BOOL TL_isFixedHeight;
+
+// Whether the cell is enforced frame layout.
+
 @property (nonatomic, assign) BOOL TL_isEnforceFrameLayout;
 
 @end

@@ -8,17 +8,25 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, TLCellHeightCachePolicy) {
-    TLCellHeightCachePolicyNone,
-    TLCellHeightCachePolicyPosition,
-    TLCellHeightCachePolicyContent
+    TLCellHeightCachePolicyNone,        // None cell height cache
+    TLCellHeightCachePolicyPosition,    // Position (NSIndexPah) based cache
+    TLCellHeightCachePolicyContent      // Content  (modelkey & properties) based cache
 };
 
 @class TLTableViewCellPositionBasedHeightCache, TLTableViewCellContentBasedHeightCache;
 
 @interface UITableView (TLHeightCache)
 
+// The cache policy used to cache cell height
+
 @property (nonatomic, assign) TLCellHeightCachePolicy                 TL_heightCachePolicy;
+
+// The position based cache
+
 @property (nonatomic, strong) TLTableViewCellPositionBasedHeightCache *TL_positionBasedCellHeightCache;
+
+// The content based cache
+
 @property (nonatomic, strong) TLTableViewCellContentBasedHeightCache  *TL_contentBasedCellHeightCache;
 
 @end

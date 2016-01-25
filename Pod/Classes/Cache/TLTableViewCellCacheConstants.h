@@ -7,4 +7,6 @@
 
 #import <UIKit/UIKit.h>
 
+// Cell height cache's absent value.
+
 static const CGFloat kAutoHeightCellHeightCacheAbsentValue = -1.0;
