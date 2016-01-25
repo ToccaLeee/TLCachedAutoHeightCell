@@ -48,7 +48,6 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [tableView TL_autoHeightForCellWithReuseIdentifer:NSStringFromClass([TestTableViewCell class])
-                                                   indexPath:indexPath
                                                     modelKey:@(self.models[indexPath.row].modelId)
                                     heightAffectedProperties:@[self.models[indexPath.row].title, self.models[indexPath.row].content]
                                                configuration:^(TestTableViewCell  *cell) {

@@ -83,6 +83,9 @@ TL_FLOAT_ASSOCIATE(tableViewWidth, setTableViewWidth, [UIScreen mainScreen].boun
 - (CGFloat)TL_autoHeightForCellWithIdentifer:(NSString *)identifer configuration:(void(^)(id cell))configuration {
     NSParameterAssert(identifer);
     UITableViewCell *tmpCell = [self autoHeightTemplateCellWithIndentifer:identifer];
+    
+    NSAssert(tmpCell, @"tmpCell is nil, check cell identifer is correct");
+    
     [tmpCell prepareForReuse];
     
     if (tmpCell.TL_isFixedHeight && tmpCell.fixHeight != kAutoHeightCellHeightCacheAbsentValue) {

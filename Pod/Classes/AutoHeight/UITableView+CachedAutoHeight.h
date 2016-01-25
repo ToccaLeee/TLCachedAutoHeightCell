@@ -14,7 +14,6 @@
                                     configuration:(void (^ _Nullable)(id _Nonnull cell))configuration;
 
 - (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)identifier
-                                        indexPath:(nonnull NSIndexPath *)indexPath
                                          modelKey:(nonnull id)modelKey
                          heightAffectedProperties:(nullable NSArray<id> *)properties
                                     configuration:(void (^ _Nullable)(id _Nonnull cell))configuration;

@@ -185,7 +185,6 @@ TL_BOOL_ASSOCIATE(isPrecacheEnabled, setIsPrecacheEnabled, false, kPrecacheEnabl
 }
 
 - (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(NSString *)identifier
-                                        indexPath:(nonnull NSIndexPath *)indexPath
                                          modelKey:(id)modelKey
                          heightAffectedProperties:(NSArray<id> *)properties
                                     configuration:(void (^)(id cell))configuration {
