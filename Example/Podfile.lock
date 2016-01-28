@@ -9,7 +9,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
   - Specta (1.0.5)
-  - TLCachedAutoHeightCell (0.1.3)
+  - TLCachedAutoHeightCell (0.1.4)
 
 DEPENDENCIES:
   - Expecta
@@ -27,6 +27,6 @@ SPEC CHECKSUMS:
   Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
-  TLCachedAutoHeightCell: 31443064804fd7c621d2170ece4180996bb46d7d
+  TLCachedAutoHeightCell: bdb467e0d1f24d569c8c3140888f17eb7e38c7f8
 
 COCOAPODS: 0.39.0
