@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '27974002AC7F97357AFF972B'
+               BlueprintIdentifier = '61ADE4C4FA125C4F9C312E73'
                BlueprintName = 'TLCachedAutoHeightCell'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TLCachedAutoHeightCell.framework'>
