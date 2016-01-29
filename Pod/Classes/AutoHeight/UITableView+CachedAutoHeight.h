@@ -22,9 +22,22 @@
 
 - (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)identifier
                                         indexPath:(nonnull NSIndexPath *)indexPath
-                                    configuration:(void (^ _Nullable)(id _Nonnull cell))configuration;
+                                    configuration:(void (^ _Nullable)(_Nonnull id cell))configuration;
 
+/**
+ *  @brief Calculate cell height and cache by content
+ *
+ *  @param identifier Cell reusable identifier
+ *
+ *  @param modelKey The cell's model data's primary key, will used by content based height cache
+ *
+ *  @param completion Configuration block which config cell's model data
+ *
+ */
 
+- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)identifier
+                                         modelKey:(nonnull id)modelKey
+                                    configuration:(void (^ _Nullable)(_Nonnull id cell))configuration;
 
 /**
  *  @brief Calculate cell height and cache by content
@@ -42,6 +55,6 @@
 - (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)identifier
                                          modelKey:(nonnull id)modelKey
                          heightAffectedProperties:(nullable NSArray<id> *)properties
-                                    configuration:(void (^ _Nullable)(id _Nonnull cell))configuration;
+                                    configuration:(void (^ _Nullable)(_Nonnull id cell))configuration;
 
 @end

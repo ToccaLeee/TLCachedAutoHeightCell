@@ -19,6 +19,6 @@
  */
 
 - (CGFloat)TL_autoHeightForCellWithIdentifer:(nonnull NSString *)identifer
-                               configuration:(void(^ _Nullable)(id _Nonnull cell))configuration;
+                               configuration:(void(^ _Nullable)(_Nonnull id cell))configuration;
 
 @end
