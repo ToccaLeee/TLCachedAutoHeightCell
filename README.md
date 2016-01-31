@@ -14,8 +14,8 @@ The pod project can be divided into two parts, cell height calculation and cache
 1. Height Cache usage:
 
    1.1 Position based height cache
-    ```
-   		- (void)buildHeightCacheAtIndexPathsIfNeeded:(nullable NSArray<NSIndexPath *> *)indexPaths;
+    ```ruby
+   	- (void)buildHeightCacheAtIndexPathsIfNeeded:(nullable NSArray<NSIndexPath *> *)indexPaths;
 
 		- (BOOL)hasCachedHeightAtIndexPath:(nonnull NSIndexPath *)indexPath;
 
@@ -23,21 +23,21 @@ The pod project can be divided into two parts, cell height calculation and cache
 
 		- (CGFloat)cachedHeightAtIndexPath:(nonnull NSIndexPath *)indexPath;
 	```
-	
+
    1.2 Content based height cache
-   ```
-  		- (CGFloat)cachedHeightWithIdentifier:(nonnull NSString *)identifer
-                          		     modelKey:(nonnull id)modelKey
-            		 heightAffectedProperties:(nullable NSArray<id> *)properties;
+   ```ruby
+  		- (CGFloat)cachedHeightWithReuseIdentifier:(nonnull NSString *)reuseIdentifer
+                          		          modelKey:(nonnull id)modelKey
+            		        heightAffectedProperties:(nullable NSArray<id> *)properties;
 
-        - (void)cacheHeightForIdentifier:(nonnull NSString *)identifer
-                      		    modelKey:(nonnull id)modelKey
-       		    heightAffectedProperties:(nullable NSArray<id> *)properties
-                      	          height:(CGFloat)height;
+      - (void)cacheHeightForReuseIdentifier:(nonnull NSString *)reuseIdentifer
+                      		         modelKey:(nonnull id)modelKey
+       		         heightAffectedProperties:(nullable NSArray<id> *)properties
+                      	             height:(CGFloat)height;
 
-        - (BOOL)hasCachedHeightForIdentifier:(nonnull NSString *)identifer
-                                    modelKey:(nonnull id)modelKey
-                    heightAffectedProperties:(nullable NSArray<id> *)properties;
+      - (BOOL)hasCachedHeightForReuseIdentifier:(nonnull NSString *)reuseIdentifer
+                                       modelKey:(nonnull id)modelKey
+                       heightAffectedProperties:(nullable NSArray<id> *)properties;
    ```
 
 2. Height calculation usage:
@@ -46,7 +46,7 @@ The pod project can be divided into two parts, cell height calculation and cache
 
 	```ruby
 	- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	    return [tableView TL_autoHeightForCellWithIdentifer:NSStringFromClass([TestTableViewCell class]) configuration:^(TestTableViewCell *cell) {
+	    return [tableView TL_autoHeightForCellWithReuseIdentifer:NSStringFromClass([TestTableViewCell class])                     configuration:^(TestTableViewCell *cell) {
 	        cell.model = self.models[indexPath.row];
 	    }];
 	}
@@ -76,9 +76,18 @@ The pod project can be divided into two parts, cell height calculation and cache
 	}
 	```
 
+  2.4 fixedHeight cell height(Calculate cell height, and the cell height only be calculated once).
+  ```ruby
+  - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+      return [tableView TL_fixedHeightForCellWithReuseIdentifer:NSStringFromClass([TestTableViewCell class])
+                                                  configuration:^(TestTableViewCell  *cell) {
+                                                       cell.model = self.models[indexPath.row];
+                                                  }];
+  }
+  ```
 ## Note
 
-For auto calculate cell height, the UITableViewCell should use autolayout or override the UIView method  ``` - (CGSize)sizeThatFits:(CGSize)size ``` . 
+For auto calculate cell height, the UITableViewCell should use autolayout or override the UIView method  ``` - (CGSize)sizeThatFits:(CGSize)size ``` .
 The identifier provided should the same as the cell reusableIdentifer (can not be nil).
 
 ## Requirements
