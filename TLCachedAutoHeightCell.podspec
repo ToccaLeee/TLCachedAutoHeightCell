@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name                 = "TLCachedAutoHeightCell"
 
-  s.version              = "0.1.5"
+  s.version              = "0.1.6"
 
   s.summary              = "A framework for automatically calculating and caching cell height."
 
