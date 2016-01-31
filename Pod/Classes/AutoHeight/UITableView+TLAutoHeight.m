@@ -73,18 +73,20 @@ TL_FLOAT_ASSOCIATE(tableViewWidth, setTableViewWidth, [UIScreen mainScreen].boun
     UITableViewCell *cell = self.autoHeightCellCache[identifier];
     if (!cell) {
         cell = [self dequeueReusableCellWithIdentifier:identifier];
-        cell.isAutoHeight = YES;
-        cell.contentView.translatesAutoresizingMaskIntoConstraints = false;
-        self.autoHeightCellCache[identifier] = cell;
+        if (!cell) {
+            NSAssert(cell, @"tmpCell is nil, check cell reuseIdentifer is correct");
+        } else {
+            cell.isAutoHeight = YES;
+            cell.contentView.translatesAutoresizingMaskIntoConstraints = false;
+            self.autoHeightCellCache[identifier] = cell;
+        }
     }
     return cell;
 }
 
-- (CGFloat)TL_autoHeightForCellWithIdentifer:(NSString *)identifer configuration:(void(^)(id cell))configuration {
-    NSParameterAssert(identifer);
-    UITableViewCell *tmpCell = [self autoHeightTemplateCellWithIndentifer:identifer];
-    
-    NSAssert(tmpCell, @"tmpCell is nil, check cell identifer is correct");
+- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(NSString *)reuseIdentifer configuration:(void(^)(id cell))configuration {
+    NSParameterAssert(reuseIdentifer);
+    UITableViewCell *tmpCell = [self autoHeightTemplateCellWithIndentifer:reuseIdentifer];
     
     [tmpCell prepareForReuse];
     
@@ -107,13 +109,13 @@ TL_FLOAT_ASSOCIATE(tableViewWidth, setTableViewWidth, [UIScreen mainScreen].boun
                                         toItem:nil
                                      attribute:NSLayoutAttributeNotAnAttribute
                                     multiplier:1.0
-                                      constant:[self cellContentWidthWithCell:tmpCell identifer:identifer]];
+                                      constant:[self cellContentWidthWithCell:tmpCell identifer:reuseIdentifer]];
         [tmpCell.contentView addConstraint:tempWidthConstraint];
         fittingSize = [tmpCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
         [tmpCell removeConstraint:tempWidthConstraint];
     } else {
         NSAssert([tmpCell respondsToSelector:@selector(sizeThatFits:)], @"Should overide \"sizeThatFits:\" method if use frame layout");
-        fittingSize = [tmpCell sizeThatFits:CGSizeMake([self cellContentWidthWithCell:tmpCell identifer:identifer], 0)];
+        fittingSize = [tmpCell sizeThatFits:CGSizeMake([self cellContentWidthWithCell:tmpCell identifer:reuseIdentifer], 0)];
     }
     
     if (self.separatorStyle != UITableViewCellSeparatorStyleNone) {
@@ -125,6 +127,13 @@ TL_FLOAT_ASSOCIATE(tableViewWidth, setTableViewWidth, [UIScreen mainScreen].boun
     }
     
     return fittingSize.height;
+}
+
+- (CGFloat)TL_fixedHeightForCellWithReuseIdentifer:(NSString *)reuseIdentifer configuration:(void (^)(id _Nonnull))configuration {
+    NSParameterAssert(reuseIdentifer);
+    UITableViewCell *tmpCell = [self autoHeightTemplateCellWithIndentifer:reuseIdentifer];
+    tmpCell.TL_isFixedHeight = YES;
+    return [self TL_autoHeightForCellWithReuseIdentifer:reuseIdentifer configuration:configuration];
 }
 
 @end

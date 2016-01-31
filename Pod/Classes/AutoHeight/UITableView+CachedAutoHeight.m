@@ -179,22 +179,22 @@ TL_BOOL_ASSOCIATE(isPrecacheEnabled, setIsPrecacheEnabled, false, kPrecacheEnabl
         return [self.TL_positionBasedCellHeightCache cachedHeightAtIndexPath:indexPath];
     }
     
-    CGFloat height = [self TL_autoHeightForCellWithIdentifer:identifier configuration:configuration];
+    CGFloat height = [self TL_autoHeightForCellWithReuseIdentifer:identifier configuration:configuration];
     [self.TL_positionBasedCellHeightCache cacheHeightForIndexPath:indexPath height:height];
     return height;
 }
 
-- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(NSString *)identifier
+- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(NSString *)reuseIdentifier
                                          modelKey:(id)modelKey
                                     configuration:(void (^)(id _Nonnull))configuration {
-    return [self TL_autoHeightForCellWithReuseIdentifer:identifier modelKey:modelKey heightAffectedProperties:nil configuration:configuration];
+    return [self TL_autoHeightForCellWithReuseIdentifer:reuseIdentifier modelKey:modelKey heightAffectedProperties:nil configuration:configuration];
 }
 
-- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(NSString *)identifier
+- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(NSString *)reuseIdentifier
                                          modelKey:(id)modelKey
                          heightAffectedProperties:(NSArray<id> *)properties
                                     configuration:(void (^)(id cell))configuration {
-    NSParameterAssert(identifier);
+    NSParameterAssert(reuseIdentifier);
     NSParameterAssert(modelKey);
     NSAssert(self.TL_heightCachePolicy != TLCellHeightCachePolicyPosition, @"Should set cache policy to TLAutoHeightCachePolicyContent");
     
@@ -202,12 +202,12 @@ TL_BOOL_ASSOCIATE(isPrecacheEnabled, setIsPrecacheEnabled, false, kPrecacheEnabl
         self.TL_heightCachePolicy = TLCellHeightCachePolicyContent;
     }
     
-    if ([self.TL_contentBasedCellHeightCache hasCachedHeightForIdentifier:identifier modelKey:modelKey heightAffectedProperties:properties]) {
-        return [self.TL_contentBasedCellHeightCache cachedHeightWithIdentifier:identifier modelKey:modelKey heightAffectedProperties:properties];
+    if ([self.TL_contentBasedCellHeightCache hasCachedHeightForIdentifier:reuseIdentifier modelKey:modelKey heightAffectedProperties:properties]) {
+        return [self.TL_contentBasedCellHeightCache cachedHeightWithIdentifier:reuseIdentifier modelKey:modelKey heightAffectedProperties:properties];
     }
     
-    CGFloat height = [self TL_autoHeightForCellWithIdentifer:identifier configuration:configuration];
-    [self.TL_contentBasedCellHeightCache cacheHeightForIdentifier:identifier modelKey:modelKey heightAffectedProperties:properties height:height];
+    CGFloat height = [self TL_autoHeightForCellWithReuseIdentifer:reuseIdentifier configuration:configuration];
+    [self.TL_contentBasedCellHeightCache cacheHeightForIdentifier:reuseIdentifier modelKey:modelKey heightAffectedProperties:properties height:height];
     return height;
 }
 

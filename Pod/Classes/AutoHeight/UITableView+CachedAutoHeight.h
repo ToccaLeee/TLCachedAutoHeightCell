@@ -12,7 +12,7 @@
 /**
  *  @brief Calculate cell height and cache by indexpath
  *
- *  @param identifier Cell reusable identifier
+ *  @param reuseIdentifier Cell reusable identifier
  *
  *  @param indexPath The indexpath the cell at, will be used by position based height cache
  *
@@ -20,14 +20,14 @@
  *
  */
 
-- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)identifier
+- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)reuseIdentifier
                                         indexPath:(nonnull NSIndexPath *)indexPath
                                     configuration:(void (^ _Nullable)(_Nonnull id cell))configuration;
 
 /**
  *  @brief Calculate cell height and cache by content
  *
- *  @param identifier Cell reusable identifier
+ *  @param reuseIdentifier Cell reusable identifier
  *
  *  @param modelKey The cell's model data's primary key, will used by content based height cache
  *
@@ -35,14 +35,14 @@
  *
  */
 
-- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)identifier
+- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)reuseIdentifier
                                          modelKey:(nonnull id)modelKey
                                     configuration:(void (^ _Nullable)(_Nonnull id cell))configuration;
 
 /**
  *  @brief Calculate cell height and cache by content
  *
- *  @param identifier Cell reusable identifier
+ *  @param reuseIdentifier Cell reusable identifier
  *
  *  @param modelKey The cell's model data's primary key, will used by content based height cache
  *
@@ -52,7 +52,7 @@
  *
  */
 
-- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)identifier
+- (CGFloat)TL_autoHeightForCellWithReuseIdentifer:(nonnull NSString *)reuseIdentifier
                                          modelKey:(nonnull id)modelKey
                          heightAffectedProperties:(nullable NSArray<id> *)properties
                                     configuration:(void (^ _Nullable)(_Nonnull id cell))configuration;
