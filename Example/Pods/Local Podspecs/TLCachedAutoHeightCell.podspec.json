@@ -1,6 +1,6 @@
 {
   "name": "TLCachedAutoHeightCell",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "summary": "A framework for automatically calculating and caching cell height.",
   "description": "Automatically cell height calculating and position or content based height caching.",
   "homepage": "https://github.com/ToccaLeee/TLCachedAutoHeightCell",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/ToccaLeee/TLCachedAutoHeightCell.git",
-    "tag": "0.1.6"
+    "tag": "0.1.7"
   },
   "platforms": {
     "ios": "7.0"
