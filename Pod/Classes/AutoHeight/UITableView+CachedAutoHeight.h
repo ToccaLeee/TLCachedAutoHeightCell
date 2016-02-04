@@ -16,7 +16,7 @@
  *
  *  @param indexPath The indexpath the cell at, will be used by position based height cache
  *
- *  @param completion Configuration block which config cell's model data
+ *  @param configuration Configuration block which config cell's model data
  *
  */
 
@@ -31,7 +31,7 @@
  *
  *  @param modelKey The cell's model data's primary key, will used by content based height cache
  *
- *  @param completion Configuration block which config cell's model data
+ *  @param configuration Configuration block which config cell's model data
  *
  */
 
@@ -48,7 +48,7 @@
  *
  *  @param properties The properties that will affect cell's height, will be hashed and used for checking content's modification
  *
- *  @param completion Configuration block which config cell's model data
+ *  @param configuration Configuration block which config cell's model data
  *
  */
 

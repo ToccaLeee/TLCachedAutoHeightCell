@@ -14,7 +14,7 @@
  *
  *  @param identifier Cell reusable identifier
  *
- *  @param completion Configuration block which config cell's model data
+ *  @param configuration Configuration block which config cell's model data
  *
  */
 
@@ -26,7 +26,7 @@
  *
  *  @param identifier Cell reusable identifier
  *
- *  @param completion Configuration block which config cell's model data
+ *  @param configuration Configuration block which config cell's model data
  *
  */
 
